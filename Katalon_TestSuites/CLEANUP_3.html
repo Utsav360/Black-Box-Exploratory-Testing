@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>CLEANUP_3</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">DelDisabledUserAc</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/<datalist><option>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>click</td><td>link=Login<datalist><option>link=Login</option><option>//a[contains(text(),'Login')]</option><option>//div[@id='body']/div[2]/ul/li[4]/a</option><option>//a[contains(@href, 'login.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/h2<datalist><option>//div[@id='body']/div/h2</option><option>//h2</option><option>css=h2</option></datalist></td><td>Please Log In</td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>click</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>adminP6ss</td>
+</tr>
+<tr><td>click</td><td>name=Submit<datalist><option>name=Submit</option><option>//input[@name='Submit']</option><option>//div[@id='body']/div/form/table/tbody/tr[4]/td[2]/input</option><option>//tr[4]/td[2]/input</option><option>css=input[name="Submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>click</td><td>link=View Logs<datalist><option>link=View Logs</option><option>//a[contains(text(),'View Logs')]</option><option>//div[@id='body']/div[2]/ul[3]/li[2]/a</option><option>//a[contains(@href, 'adminlogs.php')]</option><option>//ul[3]/li[2]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/div/div/table/caption<datalist><option>//div[@id='body']/div/div/div/table/caption</option><option>//caption</option><option>css=caption</option></datalist></td><td>Monthly</td>
+</tr>
+<tr><td>click</td><td>link=User Admin<datalist><option>link=User Admin</option><option>//a[contains(text(),'User Admin')]</option><option>//div[@id='body']/div[2]/ul[3]/li/a</option><option>//a[contains(@href, 'adminuser.php')]</option><option>//ul[3]/li/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div</option><option>//div/div/div/div[2]/div</option><option>css=div.left</option><option>//div[@id='body']/div/table</option></datalist></td><td>*Kingslayer*</td>
+</tr>
+<tr><td>click</td><td>//td[@id='Kingslayer']/a/img<datalist><option>//td[@id='Kingslayer']/a/img</option><option>//tr[72]/td/a/img</option><option>css=#Kingslayer &gt; a &gt; img</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div<datalist><option>//div[@id='body']/div</option><option>//div/div/div/div[2]/div</option><option>css=div.left</option></datalist></td><td>*Click here if you really want to delete user: Kingslayer*</td>
+</tr>
+<tr><td>click</td><td>link=here<datalist><option>link=here</option><option>//a[contains(text(),'here')]</option><option>//div[@id='body']/div/p/a</option><option>//a[contains(@href, '/tooltime/comp10066/A3/adminuser.php?act=deleteyes&amp;username=Kingslayer')]</option><option>//a</option><option>css=a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/div<datalist><option>//div[@id='body']/div/div</option><option>//div[2]/div/div</option><option>css=div.error</option></datalist></td><td>User Kingslayer was successfully deleted.</td>
+</tr>
+<tr><td>verifyNotText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table</option><option>//div[@id='body']/div</option><option>//div/div/div/div[2]/div</option><option>css=div.left</option></datalist></td><td>*Kingslayer*</td>
+</tr>
+<tr><td>click</td><td>link=Logout<datalist><option>link=Logout</option><option>//a[contains(text(),'Logout')]</option><option>//div[@id='body']/div[2]/ul[2]/li[4]/a</option><option>//a[contains(@href, 'logout.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>click</td><td>link=Home<datalist><option>link=Home</option><option>//a[contains(text(),'Home')]</option><option>//div[@id='body']/div[2]/ul/li/a</option><option>//a[contains(@href, 'index.php')]</option><option>//li/a</option><option>css=a.c5</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyNotText</td><td>id=loginname<datalist><option>id=loginname</option></datalist></td><td>*User: admin*</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">DelActiveUserAC</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/<datalist><option>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>click</td><td>link=Login<datalist><option>link=Login</option><option>//a[contains(text(),'Login')]</option><option>//div[@id='body']/div[2]/ul/li[4]/a</option><option>//a[contains(@href, 'login.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td>Festival</td>
+</tr>
+<tr><td>click</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>Kaipan6abcd</td>
+</tr>
+<tr><td>click</td><td>name=Submit<datalist><option>name=Submit</option><option>//input[@name='Submit']</option><option>//div[@id='body']/div/form/table/tbody/tr[4]/td[2]/input</option><option>//tr[4]/td[2]/input</option><option>css=input[name="Submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: Festival</td>
+</tr>
+<tr><td>click</td><td>link=User Admin<datalist><option>link=User Admin</option><option>//a[contains(text(),'User Admin')]</option><option>//div[@id='body']/div[2]/ul[3]/li/a</option><option>//a[contains(@href, 'adminuser.php')]</option><option>//ul[3]/li/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div<datalist><option>//div[@id='body']/div</option><option>//div/div/div/div[2]/div</option><option>css=div.left</option></datalist></td><td>*Demonking*</td>
+</tr>
+<tr><td>click</td><td>//td[@id='Demonking']/a/img<datalist><option>//td[@id='Demonking']/a/img</option><option>//tr[30]/td/a/img</option><option>css=#Demonking &gt; a &gt; img</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div<datalist><option>//div[@id='body']/div/p</option><option>//p</option><option>css=p.error</option><option>//div[@id='body']/div</option></datalist></td><td>*Click here if you really want to delete user: Demonking*</td>
+</tr>
+<tr><td>click</td><td>link=here<datalist><option>link=here</option><option>//a[contains(text(),'here')]</option><option>//div[@id='body']/div/p/a</option><option>//a[contains(@href, '/tooltime/comp10066/A3/adminuser.php?act=deleteyes&amp;username=Demonking')]</option><option>//a</option><option>css=a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/div<datalist><option>//div[@id='body']/div/div</option><option>//div[2]/div/div</option><option>css=div.error</option></datalist></td><td>User Demonking was successfully deleted.</td>
+</tr>
+<tr><td>click</td><td>link=Logout<datalist><option>link=Logout</option><option>//a[contains(text(),'Logout')]</option><option>//div[@id='body']/div[2]/ul[2]/li[4]/a</option><option>//a[contains(@href, 'logout.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyNotText</td><td>//div[@id='body']/div<datalist><option>//div[@id='body']/div</option><option>//div/div/div/div[2]/div</option><option>css=div.left</option></datalist></td><td>*Demonking*</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>click</td><td>link=Home<datalist><option>link=Home</option><option>//a[contains(text(),'Home')]</option><option>//div[@id='body']/div[2]/ul/li/a</option><option>//a[contains(@href, 'index.php')]</option><option>//li/a</option><option>css=a.c5</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">DelDisabledAdminAc</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/<datalist><option>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>click</td><td>link=Login<datalist><option>link=Login</option><option>//a[contains(text(),'Login')]</option><option>//div[@id='body']/div[2]/ul/li[4]/a</option><option>//a[contains(@href, 'login.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>click</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>adminP6ss</td>
+</tr>
+<tr><td>click</td><td>name=Submit<datalist><option>name=Submit</option><option>//input[@name='Submit']</option><option>//div[@id='body']/div/form/table/tbody/tr[4]/td[2]/input</option><option>//tr[4]/td[2]/input</option><option>css=input[name="Submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>click</td><td>link=User Admin<datalist><option>link=User Admin</option><option>//a[contains(text(),'User Admin')]</option><option>//div[@id='body']/div[2]/ul[3]/li/a</option><option>//a[contains(@href, 'adminuser.php')]</option><option>//ul[3]/li/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table/tbody/tr[168]/td[3]</option><option>//tr[168]/td[3]</option><option>//div[@id='body']/div/table</option></datalist></td><td>*urvish*</td>
+</tr>
+<tr><td>click</td><td>//td[@id='urvish']/a/img<datalist><option>//td[@id='urvish']/a/img</option><option>//tr[168]/td/a/img</option><option>css=#urvish &gt; a &gt; img</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div<datalist><option>//div[@id='body']/div/p</option><option>//p</option><option>css=p.error</option><option>//div[@id='body']/div</option></datalist></td><td>*Click here if you really want to delete user: urvish*</td>
+</tr>
+<tr><td>click</td><td>link=here<datalist><option>link=here</option><option>//a[contains(text(),'here')]</option><option>//div[@id='body']/div/p/a</option><option>//a[contains(@href, '/tooltime/comp10066/A3/adminuser.php?act=deleteyes&amp;username=urvish')]</option><option>//a</option><option>css=a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/div<datalist><option>//div[@id='body']/div/div</option><option>//div[2]/div/div</option><option>css=div.error</option></datalist></td><td>User urvish was successfully deleted.</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>click</td><td>link=Logout<datalist><option>link=Logout</option><option>//a[contains(text(),'Logout')]</option><option>//div[@id='body']/div[2]/ul[2]/li[4]/a</option><option>//a[contains(@href, 'logout.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>click</td><td>link=Home<datalist><option>link=Home</option><option>//a[contains(text(),'Home')]</option><option>//div[@id='body']/div[2]/ul/li/a</option><option>//a[contains(@href, 'index.php')]</option><option>//li/a</option><option>css=a.c5</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">DelActiveAdminAC</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/<datalist><option>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>click</td><td>link=Login<datalist><option>link=Login</option><option>//a[contains(text(),'Login')]</option><option>//div[@id='body']/div[2]/ul/li[4]/a</option><option>//a[contains(@href, 'login.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/h2<datalist><option>//div[@id='body']/div/h2</option><option>//h2</option><option>css=h2</option></datalist></td><td>Please Log In</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>click</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>adminP6ss</td>
+</tr>
+<tr><td>click</td><td>name=Submit<datalist><option>name=Submit</option><option>//input[@name='Submit']</option><option>//div[@id='body']/div/form/table/tbody/tr[4]/td[2]/input</option><option>//tr[4]/td[2]/input</option><option>css=input[name="Submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>click</td><td>link=User Admin<datalist><option>link=User Admin</option><option>//a[contains(text(),'User Admin')]</option><option>//div[@id='body']/div[2]/ul[3]/li/a</option><option>//a[contains(@href, 'adminuser.php')]</option><option>//ul[3]/li/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table/tbody/tr[37]/td[3]</option><option>//tr[37]/td[3]</option><option>//div[@id='body']/div/table</option></datalist></td><td>*Festival*</td>
+</tr>
+<tr><td>click</td><td>//td[@id='Festival']/a/img<datalist><option>//td[@id='Festival']/a/img</option><option>//tr[37]/td/a/img</option><option>css=#Festival &gt; a &gt; img</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div<datalist><option>//div[@id='body']/div/p</option><option>//p</option><option>css=p.error</option><option>//div[@id='body']/div</option></datalist></td><td>*Click here if you really want to delete user: Festival*</td>
+</tr>
+<tr><td>click</td><td>link=here<datalist><option>link=here</option><option>//a[contains(text(),'here')]</option><option>//div[@id='body']/div/p/a</option><option>//a[contains(@href, '/tooltime/comp10066/A3/adminuser.php?act=deleteyes&amp;username=Festival')]</option><option>//a</option><option>css=a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div<datalist><option>//div[@id='body']/div/div</option><option>//div[2]/div/div</option><option>css=div.error</option><option>//div[@id='body']/div</option></datalist></td><td>*User Festival was successfully deleted.*</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>click</td><td>link=Logout<datalist><option>link=Logout</option><option>//a[contains(text(),'Logout')]</option><option>//div[@id='body']/div[2]/ul[2]/li[4]/a</option><option>//a[contains(@href, 'logout.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyNotText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table/tbody/tr[37]/td[3]</option><option>//tr[37]/td[3]</option><option>//div[@id='body']/div/table</option></datalist></td><td>*Festival*</td>
+</tr>
+<tr><td>click</td><td>link=Home<datalist><option>link=Home</option><option>//a[contains(text(),'Home')]</option><option>//div[@id='body']/div[2]/ul/li/a</option><option>//a[contains(@href, 'index.php')]</option><option>//li/a</option><option>css=a.c5</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+</tbody></table>
+</body>
+</html>

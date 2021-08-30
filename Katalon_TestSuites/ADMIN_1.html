@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>ADMIN_1</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TestActiveAdminView</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/<datalist><option>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div[2]/h3<datalist><option>//div[@id='body']/div[2]/h3</option><option>//div[2]/h3</option><option>css=div.right &gt; h3.c3</option></datalist></td><td>Navigation</td>
+</tr>
+<tr><td>click</td><td>link=Login<datalist><option>link=Login</option><option>//a[contains(text(),'Login')]</option><option>//div[@id='body']/div[2]/ul/li[4]/a</option><option>//a[contains(@href, 'login.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table</option></datalist></td><td>*admin*</td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>click</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>adminP6ss</td>
+</tr>
+<tr><td>click</td><td>name=Submit<datalist><option>name=Submit</option><option>//input[@name='Submit']</option><option>//div[@id='body']/div/form/table/tbody/tr[4]/td[2]/input</option><option>//tr[4]/td[2]/input</option><option>css=input[name="Submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/h2<datalist><option>//div[@id='body']/div/h2</option><option>//h2</option><option>css=h2</option></datalist></td><td>Welcome to the Members Only Section</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div[2]/h3<datalist><option>//div[@id='body']/div[2]/h3</option><option>//div[2]/h3</option><option>css=div.right &gt; h3.c3</option></datalist></td><td>Navigation</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div[2]/h3[2]<datalist><option>//div[@id='body']/div[2]/h3[2]</option><option>//h3[2]</option></datalist></td><td>Member Services</td>
+</tr>
+<tr><td>click</td><td>link=News<datalist><option>link=News</option><option>//a[contains(text(),'News')]</option><option>//div[@id='body']/div[2]/ul[2]/li/a</option><option>//a[contains(@href, 'membernews.php')]</option><option>//ul[2]/li/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/h3<datalist><option>//div[@id='body']/div/h3</option><option>//div[2]/div/h3</option><option>css=div.left &gt; h3</option></datalist></td><td>Latest News - May 2019</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>click</td><td>link=Directory<datalist><option>link=Directory</option><option>//a[contains(text(),'Directory')]</option><option>//div[@id='body']/div[2]/ul[2]/li[2]/a</option><option>//a[contains(@href, 'memberdirectory.php')]</option><option>//ul[2]/li[2]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=city<datalist><option>id=city</option><option>name=city</option><option>//select[@id='city']</option><option>//div[@id='body']/div/fieldset/form/select</option><option>//select</option><option>css=#city</option></datalist></td><td></td>
+</tr>
+<tr><td>select</td><td>id=city<datalist><option>id=city</option><option>name=city</option><option>//select[@id='city']</option><option>//div[@id='body']/div/fieldset/form/select</option><option>//select</option><option>css=#city</option></datalist></td><td>label=Hamilton {7}</td>
+</tr>
+<tr><td>click</td><td>id=city<datalist><option>id=city</option><option>name=city</option><option>//select[@id='city']</option><option>//div[@id='body']/div/fieldset/form/select</option><option>//select</option><option>css=#city</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=submit<datalist><option>name=submit</option><option>//input[@name='submit']</option><option>//div[@id='body']/div/fieldset/form/input[2]</option><option>//input[2]</option><option>css=input[name="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//ul[@id='company_7']/li[2]<datalist><option>//ul[@id='company_7']/li[2]</option><option>//ul[7]/li[2]</option></datalist></td><td>7 - 70 Unsworth Drive</td>
+</tr>
+<tr><td>click</td><td>link=FAQ<datalist><option>link=FAQ</option><option>//a[contains(text(),'FAQ')]</option><option>//div[@id='body']/div[2]/ul[2]/li[3]/a</option><option>//a[contains(@href, 'memberfaq.php')]</option><option>//ul[2]/li[3]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/h2<datalist><option>//div[@id='body']/div/h2</option><option>//h2</option><option>css=h2</option></datalist></td><td>Frequently Asked Questions</td>
+</tr>
+<tr><td>click</td><td>link=exact:What is XML?<datalist><option>link=exact:What is XML?</option><option>//a[contains(text(),'What is XML?')]</option><option>//div[@id='body']/div/ul/li/a</option><option>//a[contains(@href, '#1')]</option><option>//a</option><option>css=a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>link=exact:Q7: Why is XML such an important development?<datalist><option>link=exact:Q7: Why is XML such an important development?</option><option>name=7</option><option>//a[contains(text(),'Q7: Why is XML such an important development?')]</option><option>//a[@name='7']</option><option>//div[@id='body']/div/ul[8]/li/a</option><option>//ul[8]/li/a</option><option>css=a[name="7"]</option></datalist></td><td>Q7: Why is XML such an important development?</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>verifyText</td><td>link=Logout<datalist><option>link=Logout</option><option>//a[contains(text(),'Logout')]</option><option>//div[@id='body']/div[2]/ul[2]/li[4]/a</option><option>//a[contains(@href, 'logout.php')]</option><option>//ul[2]/li[4]/a</option></datalist></td><td>Logout</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div[2]/h3[3]<datalist><option>//div[@id='body']/div[2]/h3[3]</option><option>//h3[3]</option></datalist></td><td>Admin</td>
+</tr>
+<tr><td>click</td><td>link=User Admin<datalist><option>link=User Admin</option><option>//a[contains(text(),'User Admin')]</option><option>//div[@id='body']/div[2]/ul[3]/li/a</option><option>//a[contains(@href, 'adminuser.php')]</option><option>//div[2]/ul[3]/li/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/h2<datalist><option>//div[@id='body']/div/h2</option><option>//h2</option><option>css=h2</option></datalist></td><td>Members Administration</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table</option></datalist></td><td>*admin*</td>
+</tr>
+<tr><td>verifyText</td><td>//form[@id='form1']/table/tbody/tr/th<datalist><option>//form[@id='form1']/table/tbody/tr/th</option><option>//th</option><option>css=th</option></datalist></td><td>User ID</td>
+</tr>
+<tr><td>verifyValue</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//form[@id='form1']/table/tbody/tr[2]/td/input</option><option>//tr[2]/td/input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//form[@id='form1']/table/tbody/tr[2]/th<datalist><option>//form[@id='form1']/table/tbody/tr[2]/th</option><option>//tr[2]/th</option></datalist></td><td>User Name</td>
+</tr>
+<tr><td>verifyText</td><td>//form[@id='form1']/table/tbody/tr[3]/th<datalist><option>//form[@id='form1']/table/tbody/tr[3]/th</option><option>//tr[3]/th</option></datalist></td><td>Password</td>
+</tr>
+<tr><td>verifyText</td><td>//form[@id='form1']/table/tbody/tr[4]/th<datalist><option>//form[@id='form1']/table/tbody/tr[4]/th</option><option>//tr[4]/th</option></datalist></td><td>Activate</td>
+</tr>
+<tr><td>verifyValue</td><td>name=activate<datalist><option>name=activate</option><option>//input[@name='activate']</option><option>//form[@id='form1']/table/tbody/tr[4]/td/input</option><option>//tr[4]/td/input</option><option>css=input[name="activate"]</option></datalist></td><td>off</td>
+</tr>
+<tr><td>verifyValue</td><td>name=admin<datalist><option>name=admin</option><option>//input[@name='admin']</option><option>//form[@id='form1']/table/tbody/tr[5]/td/input</option><option>//tr[5]/td/input</option><option>css=input[name="admin"]</option></datalist></td><td>off</td>
+</tr>
+<tr><td>verifyValue</td><td>name=Add New Member<datalist><option>name=Add New Member</option><option>//input[@name='Add New Member']</option><option>//form[@id='form1']/table/tbody/tr[7]/td/input[2]</option><option>//tr[7]/td/input[2]</option><option>css=input[name="Add New Member"]</option></datalist></td><td>Add New Member</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>click</td><td>link=View Logs<datalist><option>link=View Logs</option><option>//a[contains(text(),'View Logs')]</option><option>//div[@id='body']/div[2]/ul[3]/li[2]/a</option><option>//a[contains(@href, 'adminlogs.php')]</option><option>//ul[3]/li[2]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/div/div/table/caption<datalist><option>//div[@id='body']/div/div/div/table/caption</option><option>//caption</option><option>css=caption</option></datalist></td><td>Monthly</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>verifyText</td><td>link=Logout<datalist><option>link=Logout</option><option>//a[contains(text(),'Logout')]</option><option>//div[@id='body']/div[2]/ul[2]/li[4]/a</option><option>//a[contains(@href, 'logout.php')]</option><option>//li[4]/a</option></datalist></td><td>Logout</td>
+</tr>
+<tr><td>click</td><td>link=Logout<datalist><option>link=Logout</option><option>//a[contains(text(),'Logout')]</option><option>//div[@id='body']/div[2]/ul[2]/li[4]/a</option><option>//a[contains(@href, 'logout.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/h2<datalist><option>//div[@id='body']/div/h2</option><option>//h2</option><option>css=h2</option></datalist></td><td>Please Log In</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table</option></datalist></td><td>*admin*</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div[2]/h3<datalist><option>//div[@id='body']/div[2]/h3</option><option>//div[2]/h3</option><option>css=div.right &gt; h3.c3</option></datalist></td><td>Navigation</td>
+</tr>
+<tr><td>verifyText</td><td>link=Login<datalist><option>link=Login</option><option>//a[contains(text(),'Login')]</option><option>//div[@id='body']/div[2]/ul/li[4]/a</option><option>//a[contains(@href, 'login.php')]</option><option>//li[4]/a</option></datalist></td><td>Login</td>
+</tr>
+<tr><td>goBack</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Home<datalist><option>link=Home</option><option>//a[contains(text(),'Home')]</option><option>//div[@id='body']/div[2]/ul/li/a</option><option>//a[contains(@href, 'index.php')]</option><option>//li/a</option><option>css=a.c5</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">WithoutAcView</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/<datalist><option>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyTitle</td><td>COMP10066 Testing Automation Lab<datalist><option>COMP10066 Testing Automation Lab</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div[2]/h3<datalist><option>//div[@id='body']/div[2]/h3</option><option>//div[2]/h3</option><option>css=div.right &gt; h3.c3</option></datalist></td><td>Navigation</td>
+</tr>
+<tr><td>click</td><td>link=Home<datalist><option>link=Home</option><option>//a[contains(text(),'Home')]</option><option>//div[@id='body']/div[2]/ul/li/a</option><option>//a[contains(@href, 'index.php')]</option><option>//a</option><option>css=a.c5</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/h2<datalist><option>//div[@id='body']/div/h2</option><option>//h2</option><option>css=h2</option></datalist></td><td>Welcome to COMP10066 Assignment#2</td>
+</tr>
+<tr><td>click</td><td>link=About<datalist><option>link=About</option><option>//a[contains(text(),'About')]</option><option>//div[@id='body']/div[2]/ul/li[2]/a</option><option>//a[contains(@href, 'about.php')]</option><option>//li[2]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/h2<datalist><option>//div[@id='body']/div/h2</option><option>//h2</option><option>css=h2</option></datalist></td><td>About User Authorization</td>
+</tr>
+<tr><td>click</td><td>link=Turn Debug On<datalist><option>link=Turn Debug On</option><option>//a[contains(text(),'Turn Debug On')]</option><option>//div[@id='body']/div[2]/ul/li[3]/a</option><option>//a[contains(@href, 'debug.php')]</option><option>//li[3]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='footer']/h3<datalist><option>//div[@id='footer']/h3</option><option>//div[3]/h3</option><option>css=h3.c2</option></datalist></td><td>DEBUG INFORMATION</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>click</td><td>link=Turn Debug Off<datalist><option>link=Turn Debug Off</option><option>//a[contains(text(),'Turn Debug Off')]</option><option>//div[@id='body']/div[2]/ul/li[3]/a</option><option>//a[contains(@href, 'debug.php')]</option><option>//li[3]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Login<datalist><option>link=Login</option><option>//a[contains(text(),'Login')]</option><option>//div[@id='body']/div[2]/ul/li[4]/a</option><option>//a[contains(@href, 'login.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/h2<datalist><option>//div[@id='body']/div/h2</option><option>//h2</option><option>css=h2</option></datalist></td><td>Please Log In</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table</option></datalist></td><td>*admin*</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>click</td><td>link=Home<datalist><option>link=Home</option><option>//a[contains(text(),'Home')]</option><option>//div[@id='body']/div[2]/ul/li/a</option><option>//a[contains(@href, 'index.php')]</option><option>//li/a</option><option>css=a.c5</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CreateActiveAdminAc</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/<datalist><option>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div[2]/h3<datalist><option>//div[@id='body']/div[2]/h3</option><option>//div[2]/h3</option><option>css=div.right &gt; h3.c3</option></datalist></td><td>Navigation</td>
+</tr>
+<tr><td>click</td><td>link=Login<datalist><option>link=Login</option><option>//a[contains(text(),'Login')]</option><option>//div[@id='body']/div[2]/ul/li[4]/a</option><option>//a[contains(@href, 'login.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table</option></datalist></td><td>*admin*</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div[2]/h3<datalist><option>//div[@id='body']/div[2]/h3</option><option>//div[2]/h3</option><option>css=div.right &gt; h3.c3</option></datalist></td><td>Navigation</td>
+</tr>
+<tr><td>verifyText</td><td>link=Login<datalist><option>link=Login</option><option>//a[contains(text(),'Login')]</option><option>//div[@id='body']/div[2]/ul/li[4]/a</option><option>//a[contains(@href, 'login.php')]</option><option>//li[4]/a</option></datalist></td><td>Login</td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>click</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>adminP6ss</td>
+</tr>
+<tr><td>click</td><td>name=Submit<datalist><option>name=Submit</option><option>//input[@name='Submit']</option><option>//div[@id='body']/div/form/table/tbody/tr[4]/td[2]/input</option><option>//tr[4]/td[2]/input</option><option>css=input[name="Submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/h2<datalist><option>//div[@id='body']/div/h2</option><option>//h2</option><option>css=h2</option></datalist></td><td>Welcome to the Members Only Section</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div[2]/h3[3]<datalist><option>//div[@id='body']/div[2]/h3[3]</option><option>//h3[3]</option></datalist></td><td>Admin</td>
+</tr>
+<tr><td>click</td><td>link=User Admin<datalist><option>link=User Admin</option><option>//a[contains(text(),'User Admin')]</option><option>//div[@id='body']/div[2]/ul[3]/li/a</option><option>//a[contains(@href, 'adminuser.php')]</option><option>//ul[3]/li/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//form[@id='form1']/table/tbody/tr[2]/td/input</option><option>//tr[2]/td/input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//form[@id='form1']/table/tbody/tr[2]/td/input</option><option>//tr[2]/td/input</option><option>css=#username</option></datalist></td><td>Festival</td>
+</tr>
+<tr><td>click</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>//input[@id='password']</option><option>//form[@id='form1']/table/tbody/tr[3]/td/input</option><option>//tr[3]/td/input</option><option>css=#password</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>//input[@id='password']</option><option>//form[@id='form1']/table/tbody/tr[3]/td/input</option><option>//tr[3]/td/input</option><option>css=#password</option></datalist></td><td>Kaipan6abc</td>
+</tr>
+<tr><td>click</td><td>name=activate<datalist><option>name=activate</option><option>//input[@name='activate']</option><option>//form[@id='form1']/table/tbody/tr[4]/td/input</option><option>//tr[4]/td/input</option><option>css=input[name="activate"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=admin<datalist><option>name=admin</option><option>//input[@name='admin']</option><option>//form[@id='form1']/table/tbody/tr[5]/td/input</option><option>//tr[5]/td/input</option><option>css=input[name="admin"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=email<datalist><option>id=email</option><option>name=email</option><option>//input[@id='email']</option><option>//form[@id='form1']/table/tbody/tr[6]/td/input</option><option>//tr[6]/td/input</option><option>css=#email</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=email<datalist><option>id=email</option><option>name=email</option><option>//input[@id='email']</option><option>//form[@id='form1']/table/tbody/tr[6]/td/input</option><option>//tr[6]/td/input</option><option>css=#email</option></datalist></td><td>utsavpatel.m@gmail.com</td>
+</tr>
+<tr><td>click</td><td>name=Add New Member<datalist><option>name=Add New Member</option><option>//input[@name='Add New Member']</option><option>//form[@id='form1']/table/tbody/tr[7]/td/input[2]</option><option>//tr[7]/td/input[2]</option><option>css=input[name="Add New Member"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/div<datalist><option>//div[@id='body']/div/div</option><option>//div/div[2]/div/div</option><option>css=div.error</option></datalist></td><td>Record successfully inserted.</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div</option><option>//div/div/div/div[2]/div</option><option>css=div.left</option><option>//div[@id='body']/div/table</option></datalist></td><td>*Festival*</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table</option></datalist></td><td>*admin*</td>
+</tr>
+<tr><td>click</td><td>link=Logout<datalist><option>link=Logout</option><option>//a[contains(text(),'Logout')]</option><option>//div[@id='body']/div[2]/ul[2]/li[4]/a</option><option>//a[contains(@href, 'logout.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div<datalist><option>//div[@id='body']/div</option><option>//div/div/div/div[2]/div</option><option>css=div.left</option></datalist></td><td>*Festival*</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table/tbody/tr[19]/td[2]</option><option>//tr[19]/td[2]</option><option>//div[@id='body']/div/table</option></datalist></td><td>*admin*</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table</option></datalist></td><td>*Festival*</td>
+</tr>
+<tr><td>click</td><td>link=Home<datalist><option>link=Home</option><option>//a[contains(text(),'Home')]</option><option>//div[@id='body']/div[2]/ul/li/a</option><option>//a[contains(@href, 'index.php')]</option><option>//li/a</option><option>css=a.c5</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CreateDisabledAdminAc</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/<datalist><option>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>click</td><td>link=Login<datalist><option>link=Login</option><option>//a[contains(text(),'Login')]</option><option>//div[@id='body']/div[2]/ul/li[4]/a</option><option>//a[contains(@href, 'login.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table</option></datalist></td><td>*Festival*</td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td>Festival</td>
+</tr>
+<tr><td>click</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>Kaipan6abc</td>
+</tr>
+<tr><td>click</td><td>name=Submit<datalist><option>name=Submit</option><option>//input[@name='Submit']</option><option>//div[@id='body']/div/form/table/tbody/tr[4]/td[2]/input</option><option>//tr[4]/td[2]/input</option><option>css=input[name="Submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: Festival</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div[2]/h3<datalist><option>//div[@id='body']/div[2]/h3</option><option>//div[2]/h3</option><option>css=div.right &gt; h3.c3</option></datalist></td><td>Navigation</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div[2]/h3[2]<datalist><option>//div[@id='body']/div[2]/h3[2]</option><option>//h3[2]</option></datalist></td><td>Member Services</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div[2]/h3[3]<datalist><option>//div[@id='body']/div[2]/h3[3]</option><option>//h3[3]</option></datalist></td><td>Admin</td>
+</tr>
+<tr><td>click</td><td>link=User Admin<datalist><option>link=User Admin</option><option>//a[contains(text(),'User Admin')]</option><option>//div[@id='body']/div[2]/ul[3]/li/a</option><option>//a[contains(@href, 'adminuser.php')]</option><option>//ul[3]/li/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//form[@id='form1']/table/tbody/tr[2]/td/input</option><option>//tr[2]/td/input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//form[@id='form1']/table/tbody/tr[2]/td/input</option><option>//tr[2]/td/input</option><option>css=#username</option></datalist></td><td>urvish</td>
+</tr>
+<tr><td>click</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>//input[@id='password']</option><option>//form[@id='form1']/table/tbody/tr[3]/td/input</option><option>//tr[3]/td/input</option><option>css=#password</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>//input[@id='password']</option><option>//form[@id='form1']/table/tbody/tr[3]/td/input</option><option>//tr[3]/td/input</option><option>css=#password</option></datalist></td><td>Patel1234</td>
+</tr>
+<tr><td>click</td><td>xpath=(//input[@name='activate'])[2]<datalist><option>xpath=(//input[@name='activate'])[2]</option><option>//form[@id='form1']/table/tbody/tr[4]/td/input[2]</option><option>//input[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=admin<datalist><option>name=admin</option><option>//input[@name='admin']</option><option>//form[@id='form1']/table/tbody/tr[5]/td/input</option><option>//tr[5]/td/input</option><option>css=input[name="admin"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=email<datalist><option>id=email</option><option>name=email</option><option>//input[@id='email']</option><option>//form[@id='form1']/table/tbody/tr[6]/td/input</option><option>//tr[6]/td/input</option><option>css=#email</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=email<datalist><option>id=email</option><option>name=email</option><option>//input[@id='email']</option><option>//form[@id='form1']/table/tbody/tr[6]/td/input</option><option>//tr[6]/td/input</option><option>css=#email</option></datalist></td><td>urvishpatel360@gmail.com</td>
+</tr>
+<tr><td>click</td><td>name=Add New Member<datalist><option>name=Add New Member</option><option>//input[@name='Add New Member']</option><option>//form[@id='form1']/table/tbody/tr[7]/td/input[2]</option><option>//tr[7]/td/input[2]</option><option>css=input[name="Add New Member"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/div<datalist><option>//div[@id='body']/div/div</option><option>//div[2]/div/div</option><option>css=div.error</option></datalist></td><td>Record successfully inserted.</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div<datalist><option>//div[@id='body']/div</option><option>//div/div/div/div[2]/div</option><option>css=div.left</option></datalist></td><td>*urvish*</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: Festival</td>
+</tr>
+<tr><td>click</td><td>link=Logout<datalist><option>link=Logout</option><option>//a[contains(text(),'Logout')]</option><option>//div[@id='body']/div[2]/ul[2]/li[4]/a</option><option>//a[contains(@href, 'logout.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div<datalist><option>//div[@id='body']/div</option><option>//div/div/div/div[2]/div</option><option>css=div.left</option></datalist></td><td>*urvish*</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table</option></datalist></td><td>*Festival*</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table</option></datalist></td><td>*urvish*</td>
+</tr>
+<tr><td>click</td><td>link=Home<datalist><option>link=Home</option><option>//a[contains(text(),'Home')]</option><option>//div[@id='body']/div[2]/ul/li/a</option><option>//a[contains(@href, 'index.php')]</option><option>//li/a</option><option>css=a.c5</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyNotText</td><td>id=loginname<datalist><option>id=loginname</option></datalist></td><td>User: Festival</td>
+</tr>
+<tr><td>goBack</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CreateActiveUserAc</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/<datalist><option>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>click</td><td>link=Login<datalist><option>link=Login</option><option>//a[contains(text(),'Login')]</option><option>//div[@id='body']/div[2]/ul/li[4]/a</option><option>//a[contains(@href, 'login.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table</option></datalist></td><td>*admin*</td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>click</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>adminP6ss</td>
+</tr>
+<tr><td>click</td><td>name=Submit<datalist><option>name=Submit</option><option>//input[@name='Submit']</option><option>//div[@id='body']/div/form/table/tbody/tr[4]/td[2]/input</option><option>//tr[4]/td[2]/input</option><option>css=input[name="Submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>click</td><td>link=User Admin<datalist><option>link=User Admin</option><option>//a[contains(text(),'User Admin')]</option><option>//div[@id='body']/div[2]/ul[3]/li/a</option><option>//a[contains(@href, 'adminuser.php')]</option><option>//ul[3]/li/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/h2<datalist><option>//div[@id='body']/div/h2</option><option>//h2</option><option>css=h2</option></datalist></td><td>Members Administration</td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//form[@id='form1']/table/tbody/tr[2]/td/input</option><option>//tr[2]/td/input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//form[@id='form1']/table/tbody/tr[2]/td/input</option><option>//tr[2]/td/input</option><option>css=#username</option></datalist></td><td>Demonking</td>
+</tr>
+<tr><td>click</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>//input[@id='password']</option><option>//form[@id='form1']/table/tbody/tr[3]/td/input</option><option>//tr[3]/td/input</option><option>css=#password</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>//input[@id='password']</option><option>//form[@id='form1']/table/tbody/tr[3]/td/input</option><option>//tr[3]/td/input</option><option>css=#password</option></datalist></td><td>Radhekrishna6</td>
+</tr>
+<tr><td>click</td><td>name=activate<datalist><option>name=activate</option><option>//input[@name='activate']</option><option>//form[@id='form1']/table/tbody/tr[4]/td/input</option><option>//tr[4]/td/input</option><option>css=input[name="activate"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//input[@name='admin'])[2]<datalist><option>xpath=(//input[@name='admin'])[2]</option><option>//form[@id='form1']/table/tbody/tr[5]/td/input[2]</option><option>//tr[5]/td/input[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=Add New Member<datalist><option>name=Add New Member</option><option>//input[@name='Add New Member']</option><option>//form[@id='form1']/table/tbody/tr[7]/td/input[2]</option><option>//tr[7]/td/input[2]</option><option>css=input[name="Add New Member"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/div<datalist><option>//div[@id='body']/div/div</option><option>//div[2]/div/div</option><option>css=div.error</option></datalist></td><td>Record successfully inserted.</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div<datalist><option>//div[@id='body']/div</option><option>//div/div/div/div[2]/div</option><option>css=div.left</option></datalist></td><td>*Demonking*</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>click</td><td>link=Logout<datalist><option>link=Logout</option><option>//a[contains(text(),'Logout')]</option><option>//div[@id='body']/div[2]/ul[2]/li[4]/a</option><option>//a[contains(@href, 'logout.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div<datalist><option>//div[@id='body']/div</option><option>//div/div/div/div[2]/div</option><option>css=div.left</option></datalist></td><td>*Demonking*</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div[2]/h3<datalist><option>//div[@id='body']/div[2]/h3</option><option>//div[2]/h3</option><option>css=div.right &gt; h3.c3</option></datalist></td><td>Navigation</td>
+</tr>
+<tr><td>click</td><td>link=Home<datalist><option>link=Home</option><option>//a[contains(text(),'Home')]</option><option>//div[@id='body']/div[2]/ul/li/a</option><option>//a[contains(@href, 'index.php')]</option><option>//li/a</option><option>css=a.c5</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyNotText</td><td>id=loginname<datalist><option>id=loginname</option></datalist></td><td>User: Demonking</td>
+</tr>
+<tr><td>verifyNotText</td><td>id=loginname<datalist><option>id=loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CreateDisabledUserAc</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/<datalist><option>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>click</td><td>link=Login<datalist><option>link=Login</option><option>//a[contains(text(),'Login')]</option><option>//div[@id='body']/div[2]/ul/li[4]/a</option><option>//a[contains(@href, 'login.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>click</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>adminP6ss</td>
+</tr>
+<tr><td>click</td><td>name=Submit<datalist><option>name=Submit</option><option>//input[@name='Submit']</option><option>//div[@id='body']/div/form/table/tbody/tr[4]/td[2]/input</option><option>//tr[4]/td[2]/input</option><option>css=input[name="Submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>click</td><td>link=User Admin<datalist><option>link=User Admin</option><option>//a[contains(text(),'User Admin')]</option><option>//div[@id='body']/div[2]/ul[3]/li/a</option><option>//a[contains(@href, 'adminuser.php')]</option><option>//ul[3]/li/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/h2<datalist><option>//div[@id='body']/div/h2</option><option>//h2</option><option>css=h2</option></datalist></td><td>Members Administration</td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//form[@id='form1']/table/tbody/tr[2]/td/input</option><option>//tr[2]/td/input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//form[@id='form1']/table/tbody/tr[2]/td/input</option><option>//tr[2]/td/input</option><option>css=#username</option></datalist></td><td>Kingslayer</td>
+</tr>
+<tr><td>click</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>//input[@id='password']</option><option>//form[@id='form1']/table/tbody/tr[3]/td/input</option><option>//tr[3]/td/input</option><option>css=#password</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>//input[@id='password']</option><option>//form[@id='form1']/table/tbody/tr[3]/td/input</option><option>//tr[3]/td/input</option><option>css=#password</option></datalist></td><td>Curbstomp6</td>
+</tr>
+<tr><td>click</td><td>xpath=(//input[@name='activate'])[2]<datalist><option>xpath=(//input[@name='activate'])[2]</option><option>//form[@id='form1']/table/tbody/tr[4]/td/input[2]</option><option>//input[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//input[@name='admin'])[2]<datalist><option>xpath=(//input[@name='admin'])[2]</option><option>//form[@id='form1']/table/tbody/tr[5]/td/input[2]</option><option>//tr[5]/td/input[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=email<datalist><option>id=email</option><option>name=email</option><option>//input[@id='email']</option><option>//form[@id='form1']/table/tbody/tr[6]/td/input</option><option>//tr[6]/td/input</option><option>css=#email</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=email<datalist><option>id=email</option><option>name=email</option><option>//input[@id='email']</option><option>//form[@id='form1']/table/tbody/tr[6]/td/input</option><option>//tr[6]/td/input</option><option>css=#email</option></datalist></td><td>kingslayer@hotmail.com</td>
+</tr>
+<tr><td>click</td><td>name=Add New Member<datalist><option>name=Add New Member</option><option>//input[@name='Add New Member']</option><option>//form[@id='form1']/table/tbody/tr[7]/td/input[2]</option><option>//tr[7]/td/input[2]</option><option>css=input[name="Add New Member"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/div<datalist><option>//div[@id='body']/div/div</option><option>//div[2]/div/div</option><option>css=div.error</option></datalist></td><td>Record successfully inserted.</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div<datalist><option>//div[@id='body']/div</option><option>//div/div/div/div[2]/div</option><option>css=div.left</option></datalist></td><td>*Kingslayer*</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>click</td><td>link=Logout<datalist><option>link=Logout</option><option>//a[contains(text(),'Logout')]</option><option>//div[@id='body']/div[2]/ul[2]/li[4]/a</option><option>//a[contains(@href, 'logout.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div<datalist><option>//div[@id='body']/div</option><option>//div/div/div/div[2]/div</option><option>css=div.left</option></datalist></td><td>*Kingslayer*</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>click</td><td>link=Home<datalist><option>link=Home</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyNotText</td><td>id=loginname<datalist><option>id=loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">PassCheckFunc</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/<datalist><option>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div[2]/h3<datalist><option>//div[@id='body']/div[2]/h3</option><option>//div[2]/h3</option><option>css=div.right &gt; h3.c3</option></datalist></td><td>Navigation</td>
+</tr>
+<tr><td>click</td><td>link=Login<datalist><option>link=Login</option><option>//a[contains(text(),'Login')]</option><option>//div[@id='body']/div[2]/ul/li[4]/a</option><option>//a[contains(@href, 'login.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table/tbody/tr[35]/td[2]</option><option>//tr[35]/td[2]</option><option>//div[@id='body']/div/table</option></datalist></td><td>*admin*</td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>click</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>admin123</td>
+</tr>
+<tr><td>click</td><td>name=Submit<datalist><option>name=Submit</option><option>//input[@name='Submit']</option><option>//div[@id='body']/div/form/table/tbody/tr[4]/td[2]/input</option><option>//tr[4]/td[2]/input</option><option>css=input[name="Submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/form/table/tbody/tr/td<datalist><option>//div[@id='body']/div/form/table/tbody/tr/td</option><option>//td</option><option>css=td.error</option></datalist></td><td>Username or password wrong</td>
+</tr>
+<tr><td>verifyNotText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>click</td><td>link=Home<datalist><option>link=Home</option><option>//a[contains(text(),'Home')]</option><option>//div[@id='body']/div[2]/ul/li/a</option><option>//a[contains(@href, 'index.php')]</option><option>//li/a</option><option>css=a.c5</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">WrongUserNameCheck</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/<datalist><option>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>click</td><td>link=Login<datalist><option>link=Login</option><option>//a[contains(text(),'Login')]</option><option>//div[@id='body']/div[2]/ul/li[4]/a</option><option>//a[contains(@href, 'login.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td>gsjadnd</td>
+</tr>
+<tr><td>click</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>Test123456</td>
+</tr>
+<tr><td>click</td><td>name=Submit<datalist><option>name=Submit</option><option>//input[@name='Submit']</option><option>//div[@id='body']/div/form/table/tbody/tr[4]/td[2]/input</option><option>//tr[4]/td[2]/input</option><option>css=input[name="Submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/form/table/tbody/tr/td<datalist><option>//div[@id='body']/div/form/table/tbody/tr/td</option><option>//td</option><option>css=td.error</option></datalist></td><td>Username or password wrong</td>
+</tr>
+<tr><td>verifyNotText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>*User: gsjadnd*</td>
+</tr>
+<tr><td>click</td><td>link=Home<datalist><option>link=Home</option><option>//a[contains(text(),'Home')]</option><option>//div[@id='body']/div[2]/ul/li/a</option><option>//a[contains(@href, 'index.php')]</option><option>//li/a</option><option>css=a.c5</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">UpdatePassOfAnyUser</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/<datalist><option>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>click</td><td>link=Login<datalist><option>link=Login</option><option>//a[contains(text(),'Login')]</option><option>//div[@id='body']/div[2]/ul/li[4]/a</option><option>//a[contains(@href, 'login.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>click</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>adminP6ss</td>
+</tr>
+<tr><td>click</td><td>name=Submit<datalist><option>name=Submit</option><option>//input[@name='Submit']</option><option>//div[@id='body']/div/form/table/tbody/tr[4]/td[2]/input</option><option>//tr[4]/td[2]/input</option><option>css=input[name="Submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>click</td><td>link=User Admin<datalist><option>link=User Admin</option><option>//a[contains(text(),'User Admin')]</option><option>//div[@id='body']/div[2]/ul[3]/li/a</option><option>//a[contains(@href, 'adminuser.php')]</option><option>//ul[3]/li/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table/tbody/tr[117]/td[3]</option><option>//tr[117]/td[3]</option><option>//div[@id='body']/div/table</option></datalist></td><td>*Festival*</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table/tbody/tr[117]/td[4]</option><option>//tr[117]/td[4]</option><option>//div[@id='body']/div/table</option></datalist></td><td>*Kaipan6abc*</td>
+</tr>
+<tr><td>click</td><td>//td[@id='Festival']/a[2]/img<datalist><option>//td[@id='Festival']/a[2]/img</option><option>//tr[116]/td/a[2]/img</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//form[@id='form1']/table/tbody/tr[3]/td[2]<datalist><option>//form[@id='form1']/table/tbody/tr[3]/td[2]</option><option>//tr[3]/td[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>//input[@id='password']</option><option>//form[@id='form1']/table/tbody/tr[3]/td/input</option><option>//tr[3]/td/input</option><option>css=#password</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>//input[@id='password']</option><option>//form[@id='form1']/table/tbody/tr[3]/td/input</option><option>//tr[3]/td/input</option><option>css=#password</option></datalist></td><td>Kaipan6abcd</td>
+</tr>
+<tr><td>click</td><td>name=Update Member<datalist><option>name=Update Member</option><option>//input[@name='Update Member']</option><option>//form[@id='form1']/table/tbody/tr[7]/td/input[2]</option><option>//tr[7]/td/input[2]</option><option>css=input[name="Update Member"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/div<datalist><option>//div[@id='body']/div/div</option><option>//div[2]/div/div</option><option>css=div.error</option></datalist></td><td>Update was successful</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table/tbody/tr[115]/td[3]</option><option>//tr[115]/td[3]</option><option>//div[@id='body']/div/table</option></datalist></td><td>*Festival*</td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/table<datalist><option>//div[@id='body']/div/table/tbody/tr[115]/td[4]</option><option>//tr[115]/td[4]</option><option>//div[@id='body']/div/table</option></datalist></td><td>*Kaipan6abcd*</td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>click</td><td>link=Logout<datalist><option>link=Logout</option><option>//a[contains(text(),'Logout')]</option><option>//div[@id='body']/div[2]/ul[2]/li[4]/a</option><option>//a[contains(@href, 'logout.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>click</td><td>link=Home<datalist><option>link=Home</option><option>//a[contains(text(),'Home')]</option><option>//div[@id='body']/div[2]/ul/li/a</option><option>//a[contains(@href, 'index.php')]</option><option>//li/a</option><option>css=a.c5</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">BugTest2PassFail</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/<datalist><option>https://csunix.mohawkcollege.ca/tooltime/comp10066/A3/</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>click</td><td>link=Login<datalist><option>link=Login</option><option>//a[contains(text(),'Login')]</option><option>//div[@id='body']/div[2]/ul/li[4]/a</option><option>//a[contains(@href, 'login.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//div[@id='body']/div/form/table/tbody/tr[2]/td[2]/input</option><option>//input</option><option>css=#username</option></datalist></td><td>admin</td>
+</tr>
+<tr><td>click</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=password<datalist><option>name=password</option><option>//input[@name='password']</option><option>//div[@id='body']/div/form/table/tbody/tr[3]/td[2]/input</option><option>//tr[3]/td[2]/input</option><option>css=input[name="password"]</option></datalist></td><td>adminP6ss</td>
+</tr>
+<tr><td>click</td><td>name=Submit<datalist><option>name=Submit</option><option>//input[@name='Submit']</option><option>//div[@id='body']/div/form/table/tbody/tr[4]/td[2]/input</option><option>//tr[4]/td[2]/input</option><option>css=input[name="Submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>User: admin</td>
+</tr>
+<tr><td>click</td><td>link=User Admin<datalist><option>link=User Admin</option><option>//a[contains(text(),'User Admin')]</option><option>//div[@id='body']/div[2]/ul[3]/li/a</option><option>//a[contains(@href, 'adminuser.php')]</option><option>//ul[3]/li/a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//form[@id='form1']/table/tbody/tr[2]/td/input</option><option>//tr[2]/td/input</option><option>css=#username</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=username<datalist><option>id=username</option><option>name=username</option><option>//input[@id='username']</option><option>//form[@id='form1']/table/tbody/tr[2]/td/input</option><option>//tr[2]/td/input</option><option>css=#username</option></datalist></td><td>hahaha7</td>
+</tr>
+<tr><td>click</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>//input[@id='password']</option><option>//form[@id='form1']/table/tbody/tr[3]/td/input</option><option>//tr[3]/td/input</option><option>css=#password</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=password<datalist><option>id=password</option><option>name=password</option><option>//input[@id='password']</option><option>//form[@id='form1']/table/tbody/tr[3]/td/input</option><option>//tr[3]/td/input</option><option>css=#password</option></datalist></td><td>Khhsksl8</td>
+</tr>
+<tr><td>click</td><td>xpath=(//input[@name='activate'])[2]<datalist><option>xpath=(//input[@name='activate'])[2]</option><option>//form[@id='form1']/table/tbody/tr[4]/td/input[2]</option><option>//input[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//input[@name='admin'])[2]<datalist><option>xpath=(//input[@name='admin'])[2]</option><option>//form[@id='form1']/table/tbody/tr[5]/td/input[2]</option><option>//tr[5]/td/input[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=email<datalist><option>id=email</option><option>name=email</option><option>//input[@id='email']</option><option>//form[@id='form1']/table/tbody/tr[6]/td/input</option><option>//tr[6]/td/input</option><option>css=#email</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=email<datalist><option>id=email</option><option>name=email</option><option>//input[@id='email']</option><option>//form[@id='form1']/table/tbody/tr[6]/td/input</option><option>//tr[6]/td/input</option><option>css=#email</option></datalist></td><td>abc@gmail.com</td>
+</tr>
+<tr><td>click</td><td>name=Add New Member<datalist><option>name=Add New Member</option><option>//input[@name='Add New Member']</option><option>//form[@id='form1']/table/tbody/tr[7]/td/input[2]</option><option>//tr[7]/td/input[2]</option><option>css=input[name="Add New Member"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/div/div<datalist><option>//div[@id='body']/div/div</option><option>//div[2]/div/div</option><option>css=div.error</option></datalist></td><td>Record Successfully Inserted</td>
+</tr>
+<tr><td>click</td><td>link=Logout<datalist><option>link=Logout</option><option>//a[contains(text(),'Logout')]</option><option>//div[@id='body']/div[2]/ul[2]/li[4]/a</option><option>//a[contains(@href, 'logout.php')]</option><option>//li[4]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+<tr><td>click</td><td>link=Home<datalist><option>link=Home</option><option>//a[contains(text(),'Home')]</option><option>//div[@id='body']/div[2]/ul/li/a</option><option>//a[contains(@href, 'index.php')]</option><option>//li/a</option><option>css=a.c5</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=loginname<datalist><option>id=loginname</option><option>//div[@id='loginname']</option><option>//div[@id='body']/div[2]/div</option><option>//div[2]/div[2]/div</option><option>css=#loginname</option></datalist></td><td>Not Logged In</td>
+</tr>
+</tbody></table>
+</body>
+</html>
